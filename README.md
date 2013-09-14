@@ -29,6 +29,7 @@ Event callouts **wont work properly** if you change servers manually.
 
 
 #### How to use it #
+Make sure to edit `config.ini` or use `Settings` button in main GUI.   
 There are few ways of changing servers and using event callouts:
 * Using main GUI that is displayed once you run the program
 * Using ingame GUI that is visible while you hold down specified key or combination of keys
