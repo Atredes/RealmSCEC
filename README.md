@@ -42,7 +42,26 @@ Use `$server` and `$realm` pseudo variables that will be then replaced respectiv
 This means `Sphinx=/g $server $realm Sphinx!` will produce button 'Sphinx' that once pressed will send guild message `AfricaSouthWest Urgle Sphinx!` if you happen to be in said server and realm.
 #### How to add custom icons for callouts#
 In `events` folder include `.png` file using the same name you used in `callouts.ini`.      
-This way `sphinx.png` becomes icon for `Sphinx=/g $server $realm Sphinx!` callout.
+This way `events/sphinx.png` becomes icon for `Sphinx=/g $server $realm Sphinx!` callout.
+
+#### Commands list (self-explanatory):
+<table>
+<tr><td><b>EU</b></td><td><b>US</b></td></tr>
+<tr><td>/euw</td><td>/usw</td></tr>
+<tr><td>/euw2</td><td>/usw2</td></tr>
+<tr><td>/eus</td><td>/use</td></tr>
+<tr><td>/eusw</td><td>/use2</td></tr>
+<tr><td>/eun</td><td>/use3</td></tr>
+<tr><td>/eun2</td><td>/uss</td></tr>
+<tr><td>/eue</td><td>/uss2</td></tr>
+<tr><td><b>ASIA</b></td><td>/uss3</td></tr>
+<tr><td>/ae</td><td>/ussw</td></tr>
+<tr><td>/ase</td><td>/usmw</td></tr>
+<tr><td></td><td>/usmw2</td></tr>
+<tr><td></td><td>/usnw</td></tr>
+</table>
+
+
 
 
 
