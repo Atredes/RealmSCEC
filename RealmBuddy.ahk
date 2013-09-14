@@ -706,11 +706,9 @@ ImageSearch, bagX, bagY, 0, 0, A_ScreenWidth, A_ScreenHeight, *58 files/bag.png
 	if errorlevel=0
 	{	
 		EventsGuiX := (bagX - 334)
-		;EventsGuiX := (bagX - 430)
 		EventsGuiY := (bagY - 5)
 		EventsGuiX := (EventsGuiX - (number_of_events * 39)/2) 
-		;EventsGuiX := (bagX - 60)
-		;EventsGuiY := (bagY - 325)
+
 		InGame = 1
 			
 	
