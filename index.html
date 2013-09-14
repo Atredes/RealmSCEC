@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>RealmSCEC by Atredes</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>RealmSCEC</h1>
+        <p>Realm of the Mad God Server Changer Event Caller aka RealmBuddy</p>
+
+        <p class="view"><a href="https://github.com/Atredes/RealmSCEC">View the Project on GitHub <small>Atredes/RealmSCEC</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/Atredes/RealmSCEC/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Atredes/RealmSCEC/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Atredes/RealmSCEC">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a name="realmscec" class="anchor" href="#realmscec"><span class="octicon octicon-link"></span></a>RealmSCEC</h2>
+
+<h6>
+<a name="this-script-was-written-by-lazy-person-for-lazy-people-you-might-not-be-lazy-enough-to-see-why-it-would-be-useful" class="anchor" href="#this-script-was-written-by-lazy-person-for-lazy-people-you-might-not-be-lazy-enough-to-see-why-it-would-be-useful"><span class="octicon octicon-link"></span></a>This script was written by lazy person for lazy people. You might not be lazy enough to see why it would be useful</h6>
+
+<h4>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features:</h4>
+
+<ul>
+<li>  Change server with one click</li>
+<li>  Call for event with one click</li>
+</ul><p>RealmSCEC knows what realm and server you are in.<br>
+This means you can use predefined messages in which you include your current location making calling your mates for events even faster.</p>
+
+<h4>
+<a name="how-to-run-it" class="anchor" href="#how-to-run-it"><span class="octicon octicon-link"></span></a>How to run it</h4>
+
+<p>It's written in <a href="http://www.autohotkey.com/">AHK</a> this means you need to have Autohotkey installed in order to use it or to compile the code. You can also ask your friend who have Autohotkey already installed to compile it for you. This way you wont have to install anything.<br><strong>Why I wont compile it myself</strong> and provide you with <code>.exe</code> along with the source code? I believe you shouldn't trust <code>.exe</code> files from unknown sources, I want to make sure that you know what you are using before you use it.   </p>
+
+<p><strong>Will work:</strong>
+With browsers (including kong), flash projectors, Steam.<br><strong>WONT work:</strong>
+With resized (zoomed in/out) game window, fullscreen whether stretched (there are people like that...) or not (not supported at all) </p>
+
+<h6>
+<a name="note-wont-work-simply-means-it-doesnt-work-now-in-the-state-as-it-is-its-simple-enough-to-make-it-work-at-any-setup-contribute" class="anchor" href="#note-wont-work-simply-means-it-doesnt-work-now-in-the-state-as-it-is-its-simple-enough-to-make-it-work-at-any-setup-contribute"><span class="octicon octicon-link"></span></a>Note: "wont work" simply means it doesn't work now, in the state as it is. It's simple enough to make it work at any setup. Contribute.</h6>
+
+<h4>
+<a name="how-it-works" class="anchor" href="#how-it-works"><span class="octicon octicon-link"></span></a>How it works?</h4>
+
+<p>The best way to find out is just to read the code and <a href="http://www.autohotkey.com/docs/">AHK documentation</a>.<br>
+Short version? It clicks faster than you do. </p>
+
+<ul>
+<li>
+<em>How it knows what server I'm in?</em> It knows what server you are in because you <strong>joined this server using this script</strong>.<br>
+Event callouts <strong>wont work properly</strong> if you change servers manually.<br>
+</li>
+<li>
+<em>Ok that's good to know, but how it knows what realm I'm in?</em>  It checks the name on the portal when you enter the realm. Just like you do.<br>
+</li>
+</ul><h6>
+<a name="it-does-not-interfere-in-game-client" class="anchor" href="#it-does-not-interfere-in-game-client"><span class="octicon octicon-link"></span></a>It does not interfere in game client.</h6>
+
+<h4>
+<a name="how-to-use-it" class="anchor" href="#how-to-use-it"><span class="octicon octicon-link"></span></a>How to use it</h4>
+
+<p>There are few ways of changing servers and using event callouts:</p>
+
+<ul>
+<li>Using main GUI that is displayed once you run the program</li>
+</ul><p><img src="http://img694.imageshack.us/img694/6338/imyk.png" alt="Main GUI preview"></p>
+
+<ul>
+<li>Using ingame GUI that is visible while you hold down specified key or combination of keys</li>
+</ul><p><img src="http://img14.imageshack.us/img14/9554/fc7n.png" alt="GUI Preview"></p>
+
+<ul>
+<li>Using ingame menu list that is displayed once you press specified key or combination of keys</li>
+</ul><p><img src="http://img34.imageshack.us/img34/6769/4jt.png" alt="Menu Preview"></p>
+
+<ul>
+<li>Using custom commands (only for server changing)</li>
+</ul><h4>
+<a name="how-to-add-custom-callouts" class="anchor" href="#how-to-add-custom-callouts"><span class="octicon octicon-link"></span></a>How to add custom callouts</h4>
+
+<p>Edit <code>callouts.ini</code><br>
+First word is callout name that will be used on button or menu item and after <code>=</code> sign is the message your intent to send.<br>
+Use <code>$server</code> and <code>$realm</code> pseudo variables that will be then replaced respectively with your current server and realm.<br>
+This means <code>Sphinx=/g $server $realm Sphinx!</code> will produce button 'Sphinx' that once pressed will send guild message <code>AfricaSouthWest Urgle Sphinx!</code> if you happen to be in said server and realm.</p>
+
+<h4>
+<a name="how-to-add-custom-icons-for-callouts" class="anchor" href="#how-to-add-custom-icons-for-callouts"><span class="octicon octicon-link"></span></a>How to add custom icons for callouts</h4>
+
+<p>In <code>events</code> folder include <code>.png</code> file using the same name you used in <code>callouts.ini</code>.<br>
+This way <code>events/sphinx.png</code> becomes icon for <code>Sphinx=/g $server $realm Sphinx!</code> callout.</p>
+
+<h4>
+<a name="commands-list-self-explanatory" class="anchor" href="#commands-list-self-explanatory"><span class="octicon octicon-link"></span></a>Commands list (self-explanatory):</h4>
+
+<table>
+<tr>
+<th><b>EU:</b></th>
+<th><b>US:</b></th>
+</tr>
+<tr>
+<td>/euw</td>
+<td>/usw</td>
+</tr>
+<tr>
+<td>/euw2</td>
+<td>/usw2</td>
+</tr>
+<tr>
+<td>/eus</td>
+<td>/use</td>
+</tr>
+<tr>
+<td>/eusw</td>
+<td>/use2</td>
+</tr>
+<tr>
+<td>/eun</td>
+<td>/use3</td>
+</tr>
+<tr>
+<td>/eun2</td>
+<td>/uss</td>
+</tr>
+<tr>
+<td>/eue</td>
+<td>/uss2</td>
+</tr>
+<tr>
+<th><b>ASIA:</b></th>
+<td>/uss3</td>
+</tr>
+<tr>
+<td>/ae</td>
+<td>/ussw</td>
+</tr>
+<tr>
+<td>/ase</td>
+<td>/usmw</td>
+</tr>
+<tr>
+<td></td>
+<td>/usmw2</td>
+</tr>
+<tr>
+<td></td>
+<td>/usnw</td>
+</tr>
+</table>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Atredes">Atredes</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
