@@ -63,6 +63,8 @@ IniRead, InteractionKey, config.ini, Hotkeys, InteractionKey
 Hotkey, ~%InteractionKey%, FindRealmSub
 Hotkey, ~LButton, FindRealmSubClick
 
+IniRead, OptionsKey, config.ini, Hotkeys, OptionsKey
+
 Gui 1:+LabelRealmBuddy
 Gui, RealmBuddy:Margin, 5, 5
 Gui, RealmBuddy:font, s9, Tahoma
@@ -168,7 +170,7 @@ Gui, Settings:Add, Edit, w300 r1 vTitleEdit,%WinTitle%
 Gui, Settings:Add, GroupBox, w130 , Quality Settings
 Gui, Settings:Add, DropDownList, w120 yp20 xp5 %QualitySaved% vquality, High|Middle|Low
 
-Gui, Settings:Add, GroupBox, w300 h95 xp165 yp-20, Hotkeys ;Hotkeys Settings
+Gui, Settings:Add, GroupBox, w300 h120 xp165 yp-20, Hotkeys ;Hotkeys Settings
 Gui, Settings:Add, Text, w100 yp20 xp5, Servers List GUI: ;Server GUI hotkey
 Gui, Settings:Add, Hotkey, vServerNewGUIHotkey h20 w40 yp-4 xp95,%ServerGuiHotkey%
 
@@ -182,7 +184,9 @@ Gui, Settings:Add, Text, w90 yp20 yp3 xp50, Event List Menu: ;Event MENU hotkey
 Gui, Settings:Add, Hotkey, vEventNewMenuHotkey h20 w40 yp-4 xp95 ,%EventMenuHotkey%
 
 Gui, Settings:Add, Text,w120 yp30 xp-240, In-Game Interaction Key: ;Interaction hotkey
-Gui, Settings:Add, Hotkey, vInteractionHotkey h20 w40 yp-4 xp120,%InteractionKey%
+Gui, Settings:Add, Hotkey, vInteractionNewHotkey h20 w40 yp-4 xp120,%InteractionKey%
+Gui, Settings:Add, Text,w120 yp30 xp-120, In-Game Options Key: ;Options hotkey
+Gui, Settings:Add, Hotkey, vOptionsNewHotkey h20 w40 yp-4 xp120,%OptionsKey%
 Gui, Settings:Add, Button, center x300 w80 h25 , Cancel
 Gui, Settings:Add, Button, center yp0 xp85  h25 gSaveSettings, Save and Reload
 Gui, Settings:Show, Hide ,Settings
@@ -328,6 +332,12 @@ SaveSettings:
 	Iniread, EventMenuHotkey, config.ini, Hotkeys, EventMenuHotkey
 	Hotkey, %EventMenuHotkey%, EventMenuSub, Off
 	IniWrite, %EventNewMenuHotkey%, config.ini, Hotkeys, EventMenuHotkey	
+	
+	IniWrite, InteractionNewHotkey, config.ini, Hotkeys, InteractionKey
+	IniRead, InteractionKey, config.ini, Hotkeys, InteractionKey
+	
+	IniWrite, OptionsNewHotkey, config.ini, Hotkeys, OptionsKey
+	IniRead, OptionsKey, config.ini, Hotkeys, OptionsKey
 	
 	IniRead, WinTitle, config.ini,  Settings, WindowTitle
 	Reload
